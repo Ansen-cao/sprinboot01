@@ -1,0 +1,17 @@
+com\ansen\mbg\CommentGenerator.class
+com\ansen\mbg\mapper\PmsBrandMapper.class
+com\ansen\config\MyBatisConfig.class
+com\ansen\common\api\CommonPage.class
+com\ansen\mbg\Generator.class
+com\ansen\controller\PmsBrandController.class
+com\ansen\common\api\CommonResult.class
+com\ansen\mbg\model\PmsBrandExample$Criterion.class
+com\ansen\common\api\IErrorCode.class
+com\ansen\common\api\ResultCode.class
+com\ansen\service\impl\PmsBrandServiceImpl.class
+com\ansen\mbg\model\PmsBrandExample$Criteria.class
+com\ansen\mbg\model\PmsBrandExample$GeneratedCriteria.class
+com\ansen\mbg\model\PmsBrand.class
+com\ansen\service\PmsBrandService.class
+com\ansen\Springboot01Application.class
+com\ansen\mbg\model\PmsBrandExample.class
