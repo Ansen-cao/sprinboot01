@@ -15,3 +15,4 @@ com\ansen\mbg\model\PmsBrand.class
 com\ansen\service\PmsBrandService.class
 com\ansen\Springboot01Application.class
 com\ansen\mbg\model\PmsBrandExample.class
+com\ansen\config\Swagger2Config.class
