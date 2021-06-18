@@ -29,14 +29,32 @@
             <property name="nullCatalogMeansCurrent" value="true" />
         </jdbcConnection>
         <!--指定生成model的路径-->
-        <javaModelGenerator targetPackage="com.ansen.mbg.model" targetProject="D:\project\springboot01\src\main\java"/>
+        <javaModelGenerator targetPackage="com.ansen.mbg.model" targetProject="E:\2_project\git\springboot01\src\main\java"/>
         <!--指定生成mapper.xml的路径-->
-        <sqlMapGenerator targetPackage="com.ansen.mbg.mapper" targetProject="D:\project\springboot01\src\main\resources"/>
+        <sqlMapGenerator targetPackage="com.ansen.mbg.mapper" targetProject="E:\2_project\git\springboot01\src\main\resources"/>
         <!--指定生成mapper接口的的路径-->
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.ansen.mbg.mapper"
-                             targetProject="D:\project\springboot01\src\main\java"/>
+                             targetProject="E:\2_project\git\springboot01\src\main\java"/>
         <!--生成全部表tableName设为%-->
         <table tableName="pms_brand">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="ums_admin">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="ums_role">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="ums_permission">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="ums_admin_role_relation">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="ums_role_permission_relation">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="ums_admin_permission_relation">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
     </context>
