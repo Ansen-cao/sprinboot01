@@ -1,6 +1,8 @@
 server:
   port: 8086
 
+isCheckFlag: false
+
 redis:
   key:
     prefix:
@@ -25,6 +27,14 @@ spring:
         max-wait: -1ms
         max-idle: 8
         min-idle: 0
+  rabbitmq:
+    host: localhost # rabbitmq的连接地址
+    port: 5672 # rabbitmq的连接端口号
+    virtual-host: /mall # rabbitmq的虚拟host
+    username: mall # rabbitmq的用户名
+    password: mall #rabbitmq的密码
+    publisher-returns: true #如果对异步消息需要回调必须设置为true
+
 
 mybatis:
   mapper-locations:
@@ -35,4 +45,6 @@ jwt:
   secret: mySecret #JWT加解密使用的密钥
   expiration: 604800 #JWT的超期限时间(60*60*24)
   tokenHead: Bearer  #JWT负载中拿到开头
+
+
 
